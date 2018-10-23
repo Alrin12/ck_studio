@@ -3,19 +3,26 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   background: black;
-  color: white;
-  max-width: 500px;
-  max-height: 200px;
   margin: 2rem auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 100vh;
+  max-height: 100vh;
+  color: white;
   border-radius: 5px;
   transform: ${props => `scale(${props.scale})`};
 `;
 
+const After = styled.div`
+  background: black;
+  width: 300px;
+  height: 300px;
+`
+
+//max-height: ${props => `height(${props.height})`};
 
 export default class CircleLoader extends Component {
   render() {
     const {scale} = this.props
+    console.log(this.props)
     return (
       <Container scale={scale}>
         <div className="card">
