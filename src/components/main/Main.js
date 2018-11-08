@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Banner from './partials/ui/Banner'
-import Card from '../common/ui/Card'
+import ProfileCard from '../common/ui/profile-card/ProfileCard'
 import styled from 'styled-components'
 
 export default class Main extends Component {
@@ -29,7 +29,16 @@ export default class Main extends Component {
             })
           }
         </Navigation>
-        <Card/>
+        <ProfileCard
+          cardClass={'float'}
+          name={'test'}
+          positionName={'Engineer'}
+          stats={[
+            {name: 'test1', value: 350},
+            {name: 'test1', value: 350},
+            {name: 'test1', value: 350},
+          ]}
+        />
         <Banner/>
       </Container>
     )
