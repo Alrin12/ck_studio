@@ -2,8 +2,6 @@ import React, {Component} from 'react'
 import Banner from './partials/ui/Banner'
 import ProfileCard from '../common/ui/profile-card/ProfileCard'
 import Loading from '../common/ui/loading/Loading'
-import ReactDOM from 'react-dom'
-
 import styled from 'styled-components'
 
 export default class Main extends Component {
