@@ -3,6 +3,14 @@ import Lottie from 'react-lottie'
 import Animation from 'react-lottie'
 // import * as animationData from '../../../../static/lottie/pinjump.json'
 
+const width = document.body.clientWidth
+const height = document.body.clientHeight
+const max_offset_width = 400
+const max_offset_height = 400
+
+const offset_width = width > max_offset_width ? max_offset_width : width / 2
+const offset_height = height > max_offset_height ? max_offset_height : height / 2
+
 export default class Loading extends Component {
   constructor(props) {
     super(props)
@@ -33,8 +41,8 @@ export default class Loading extends Component {
       <div style={containerStyle}>
         <Lottie
           options={defaultOptions}
-          height={500}
-          width={500}
+          height={offset_height}
+          width={offset_width}
           isStopped={this.state.isStopped}
           isPaused={this.state.isPaused}
         />

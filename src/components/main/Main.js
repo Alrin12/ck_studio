@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import Banner from './partials/ui/Banner'
 import ProfileCard from '../common/ui/profile-card/ProfileCard'
 import Loading from '../common/ui/loading/Loading'
+import {Motion, spring} from 'react-motion'
+import {Container} from "../common/ui/Theme"
 import styled from 'styled-components'
 
 export default class Main extends Component {
@@ -15,7 +17,7 @@ export default class Main extends Component {
         {id: 4, title: 'Recruit', hover: false},
         {id: 5, title: 'E-mail', hover: false},
       ],
-
+      showContainer: true,
       animation_timer: 0,
       intervalId: null,
     }
@@ -42,41 +44,50 @@ export default class Main extends Component {
   }
 
   render() {
-    console.log(this.state.animation_timer)
     return (
       this.state.intervalId ? <Loading/> :
-      <Container>
-        <Navigation>
+        <Motion
+          defaultStyle={{x: -200, opacity: 0}}
+          style={{
+            x: spring(this.state.showContainer ? 0 : -800),
+            opacity: spring(this.state.showContainer ? 1 : 0)
+          }}
+        >
           {
-            this.state.nav_menu.map((menu, id) => {
-              return (
-                <Menu key={id}>{menu.title}</Menu>
-              )
-            })
+            style => (
+              <Container
+                style={{
+                  transform: `translateX(${style.x}px)`,
+                  opcity: style.opacity
+                }}
+              >
+                <Navigation>
+                  {
+                    this.state.nav_menu.map((menu, id) => {
+                      return (
+                        <Menu key={id}>{menu.title}</Menu>
+                      )
+                    })
+                  }
+                </Navigation>
+                <ProfileCard
+                  cardClass={'float'}
+                  name={'test'}
+                  positionName={'Engineer'}
+                  stats={[
+                    {name: 'test1', value: 350},
+                    {name: 'test1', value: 350},
+                    {name: 'test1', value: 350},
+                  ]}
+                />
+                <Banner/>
+              </Container>
+            )
           }
-        </Navigation>
-        <ProfileCard
-          cardClass={'float'}
-          name={'test'}
-          positionName={'Engineer'}
-          stats={[
-            {name: 'test1', value: 350},
-            {name: 'test1', value: 350},
-            {name: 'test1', value: 350},
-          ]}
-        />
-        <Banner/>
-      </Container>
+        </Motion>
     )
   }
 }
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: black;
-  color: white;
-`
 
 const Navigation = styled.div`
   display: flex;
