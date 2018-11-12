@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5e4444-9cd6-42f6-8162-aa857b295bbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/ui/Theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/partials/ui/Introduction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/check_animation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/checked_done_.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/i'm_thirsty!.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/like.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/love_explosion.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/pinjump.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/lottie/servishero_loading.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/ui/Theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/ui/Theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,7 +41,7 @@
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="67" />
+          <entry key="js" value="69" />
           <entry key="json" value="16" />
           <entry key="md" value="2" />
           <entry key="rnc" value="1" />
@@ -49,7 +53,7 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="16" />
-          <entry key="JavaScript" value="67" />
+          <entry key="JavaScript" value="69" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="7" />
@@ -64,10 +68,10 @@
         <counts>
           <entry key="css" value="33" />
           <entry key="html" value="116" />
-          <entry key="js" value="12582" />
+          <entry key="js" value="14092" />
           <entry key="json" value="2" />
           <entry key="scss" value="16" />
-          <entry key="txt" value="290" />
+          <entry key="txt" value="365" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +79,8 @@
           <entry key="CSS" value="33" />
           <entry key="HTML" value="116" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="12582" />
-          <entry key="PLAIN_TEXT" value="290" />
+          <entry key="JavaScript" value="14092" />
+          <entry key="PLAIN_TEXT" value="365" />
           <entry key="SCSS" value="16" />
         </counts>
       </usages-collector>
@@ -94,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+            <state relative-caret-position="299">
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -106,8 +110,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/common/ui/Theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="255">
+              <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="43" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -184,6 +191,7 @@
       <find>loaders:</find>
       <find>require.resolve('style</find>
       <find>react</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,9 +233,9 @@
         <option value="$PROJECT_DIR$/src/components/common/ui/loading/Loading.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/components/common/ui/Theme.js" />
         <option value="$PROJECT_DIR$/src/components/main/partials/ui/Introduction.js" />
         <option value="$PROJECT_DIR$/src/components/main/Main.js" />
+        <option value="$PROJECT_DIR$/src/components/common/ui/Theme.js" />
       </list>
     </option>
   </component>
@@ -323,6 +331,19 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="partials" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ck-studio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ck-studio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ck-studio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ck-studio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="lottie" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -433,15 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542017259918</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MainComponent ReactMotion을 이용한 Animation 적용(Slide in left)">
+      <created>1542018397630</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542018397630</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40962000" />
+    <option name="totallyTimeSpent" value="45028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33169532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -457,8 +484,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32924962" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25982532" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32969433" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25982532" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32969433" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -478,7 +505,8 @@
     <MESSAGE value="ProfileCard Component 구현." />
     <MESSAGE value="&lt;Main&gt; Component Refector" />
     <MESSAGE value="Loading Component Refector(device 크기에 따른 가변 넓이 적용)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loading Component Refector(device 크기에 따른 가변 넓이 적용)" />
+    <MESSAGE value="MainComponent ReactMotion을 이용한 Animation 적용(Slide in left)" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainComponent ReactMotion을 이용한 Animation 적용(Slide in left)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -712,29 +740,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/ui/loading/Loading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/ui/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Introduction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -766,10 +770,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/ui/Theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="38" lean-forward="true" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+        <state relative-caret-position="299">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
