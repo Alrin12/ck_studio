@@ -15,8 +15,6 @@ export class SlideDownContainer extends Component {
   }
 
   render() {
-    const Wrapper = this.props.wrapper
-
     return(
       <Motion
         defaultStyle={{y: -500, opacity: 0}}
@@ -27,14 +25,14 @@ export class SlideDownContainer extends Component {
       >
         {
           style => (
-            <Wrapper
+            <div
               style={{
                 transform: `translateY(${style.y}px)`,
                 opacity: style.opacity
               }}
             >
               {this.props.children}
-            </Wrapper>
+            </div>
           )
         }
       </Motion>

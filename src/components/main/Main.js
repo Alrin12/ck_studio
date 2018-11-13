@@ -51,7 +51,7 @@ export default class Main extends Component {
   }
 
   renderMotion = () => {
-    return(
+    return (
       <SlideDownContainer
         wrapper={this.renderMain}
       />
@@ -80,9 +80,34 @@ export default class Main extends Component {
   }
 
   render() {
+    const AnimationWrapper = this.props.wrapper
+    
     return (
       this.state.intervalId ? <Loading/> :
-        this.renderMotion()
+        <AnimationWrapper>
+          <Container>
+            <Navigation>
+              {
+                this.state.nav_menu.map((menu, id) => {
+                  return (
+                    <Menu key={id}>{menu.title}</Menu>
+                  )
+                })
+              }
+            </Navigation>
+            <ProfileCard
+              cardClass={'float'}
+              name={'test'}
+              positionName={'Engineer'}
+              stats={[
+                {name: 'test1', value: 350},
+                {name: 'test1', value: 350},
+                {name: 'test1', value: 350},
+              ]}
+            />
+            <Banner/>
+          </Container>
+        </AnimationWrapper>
     )
   }
 }
