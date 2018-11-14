@@ -1,14 +1,14 @@
 import React, {Component} from 'react'
 import Banner from './partials/ui/Banner'
 import ProfileCard from '../common/ui/profile-card/ProfileCard'
+import Navigation from './partials/ui/Navigation'
 import Loading from '../common/ui/loading/Loading'
 import {Container} from "../common/ui/Theme"
-import {SlideDownContainer} from "../common/ui/Theme"
 import styled from 'styled-components'
 
 export default class Main extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       nav_menu: [
         {id: 1, title: 'CK Studio', hover: false},
@@ -22,42 +22,6 @@ export default class Main extends Component {
       intervalId: null,
     }
   }
-
-  renderMain = () => {
-    return (
-      <Container>
-        <Navigation>
-          {
-            this.state.nav_menu.map((menu, id) => {
-              return (
-                <Menu key={id}>{menu.title}</Menu>
-              )
-            })
-          }
-        </Navigation>
-        <ProfileCard
-          cardClass={'float'}
-          name={'test'}
-          positionName={'Engineer'}
-          stats={[
-            {name: 'test1', value: 350},
-            {name: 'test1', value: 350},
-            {name: 'test1', value: 350},
-          ]}
-        />
-        <Banner/>
-      </Container>
-    )
-  }
-
-  renderMotion = () => {
-    return (
-      <SlideDownContainer
-        wrapper={this.renderMain}
-      />
-    )
-  }
-
 
   componentDidMount() {
     const intervalId = setInterval(this.updateAnimationTimer, 1000)
@@ -81,20 +45,13 @@ export default class Main extends Component {
 
   render() {
     const AnimationWrapper = this.props.wrapper
-    
+
     return (
       this.state.intervalId ? <Loading/> :
         <AnimationWrapper>
-          <Container>
-            <Navigation>
-              {
-                this.state.nav_menu.map((menu, id) => {
-                  return (
-                    <Menu key={id}>{menu.title}</Menu>
-                  )
-                })
-              }
-            </Navigation>
+          <Navigation
+            nav_menu={this.state.nav_menu}
+          />
             <ProfileCard
               cardClass={'float'}
               name={'test'}
@@ -106,20 +63,18 @@ export default class Main extends Component {
               ]}
             />
             <Banner/>
-          </Container>
+          <div style={{height: '300px'}}/>
+          <div style={{height: '300px'}}/>
+          <div style={{height: '300px'}}/>
         </AnimationWrapper>
     )
   }
 }
 
-const Navigation = styled.div`
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+const ComponentWrapper = styled.div`
+  height: 100vh;
 `
 
-const Menu = styled.p`
-  &:hover {
-    color: blue;
-  }
+const ContentWrapper = styled.div`
+  flex: ${props => props.flex};
 `

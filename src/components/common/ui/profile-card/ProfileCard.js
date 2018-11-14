@@ -8,7 +8,7 @@ import ProfileStats from './ProfileStats';
 
 import './ProfileCard.scss';
 
-class UserCard extends React.Component {
+export default class ProfileCard extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -25,35 +25,35 @@ class UserCard extends React.Component {
     } = this.props;
 
     return (
-      <a className='card-link' href={href}>
-        <Card
-          className={cardClass}
-        >
-          <ProfileHeader
-            src={header}
-          />
-          <ProfileAvatar
-            src={avatar}
-          />
-          <ProfileBody
-            name={name}
-            positionName={positionName}
+      <div>
+        <a className='card-link' href={href}>
+          <Card
+            className={cardClass}
           >
-            {this.props.children}
-          </ProfileBody>
+            <ProfileHeader
+              src={header}
+            />
+            <ProfileAvatar
+              src={avatar}
+            />
+            <ProfileBody
+              name={name}
+              positionName={positionName}
+            >
+              {this.props.children}
+            </ProfileBody>
 
-          {
-            stats !== undefined
-              ? <ProfileStats
-                stats={stats}
-              />
-              : null
-          }
+            {
+              stats ?
+                <ProfileStats
+                  stats={stats}
+                />
+                : null
+            }
 
-        </Card>
-      </a>
+          </Card>
+        </a>
+      </div>
     );
   }
 }
-
-export default UserCard;
