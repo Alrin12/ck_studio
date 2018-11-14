@@ -2,9 +2,13 @@ import {Motion, spring} from 'react-motion'
 import React, {Component} from 'react'
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const ColumnContainer = styled.div`
   display: flex;
   flex-direction: column;
+`
+
+export const RowContainer = styled.div`
+  display: flex;
 `
 
 export class SlideDownContainer extends Component {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Swiper from 'react-id-swiper'
+import {RowContainer} from "../../../common/ui/Theme";
 import './Banner.css'
 import styled from 'styled-components'
 
@@ -14,23 +15,26 @@ export default class Banner extends Component {
       advertise: [
         {
           id: 1,
-          content: '2018년도 얼마 안남았네요',
+          title: '2018년도 얼마 안남았네요',
+          subtitle: '',
           textColor: '#ff7fc7',
           backgroundColor: '#ffffff',
           image: require('../../../../static/images/adios.png')
         },
-        {id: 2, content: 'Test #2', textColor: 'yellow', backgroundColor: 'skyblue', image: ''},
+        {id: 2, title: 'Test #2', subtitle: '', textColor: 'yellow', backgroundColor: 'skyblue', image: ''},
         {
           id: 3,
-          content: 'Test #3',
-          textColor: 'pink',
+          title: '여행을 가고싶을땐?',
+          subtitle: 'Ck Travel',
+          textColor: 'white',
           backgroundColor: 'white',
           image: require('../../../../static/images/travel.jpg')
         },
-        {id: 4, content: 'Test #4', textColor: 'skyblue', backgroundColor: 'pink', image: ''},
+        {id: 4, title: 'Test #4', subtitle: '', textColor: 'skyblue', backgroundColor: 'pink', image: ''},
         {
           id: 5,
-          content: 'Test #5',
+          title: 'Test #5',
+          subtitle: '',
           textColor: 'skyblue',
           backgroundColor: 'pink',
           image: require('../../../../static/images/question.jpg')
@@ -83,7 +87,7 @@ export default class Banner extends Component {
 
 
     return (
-      <Container>
+      <RowContainer>
         <Swiper {...params} containerClass={'swipe-container'}>
           {
             this.state.advertise.map((item, id) => {
@@ -94,21 +98,19 @@ export default class Banner extends Component {
                   color={item.textColor}
                   style={{backgroundImage: `url(${item.image})`}}
                 >
-                  <Title>{item.content}</Title>
+                  <Title>{item.title}</Title>
+                  <Subtitle>{item.subtitle}</Subtitle>
                 </AdvertiseWrapper>
               )
             })
           }
         </Swiper>
-      </Container>
+      </RowContainer>
     )
   }
 }
 
 
-const Container = styled.div`
-  display: flex;
-`
 
 const AdvertiseWrapper = styled.div`
   background: ${props => props.background} no-repeat;
@@ -120,9 +122,15 @@ const AdvertiseWrapper = styled.div`
 `
 
 const Title = styled.p`
-  position: relative;
   color: inherit;
   font-size: 4rem;
   font-weight: 700;
+  z-index: 2;
+`
+
+const Subtitle = styled.p`
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 500;
   z-index: 2;
 `
