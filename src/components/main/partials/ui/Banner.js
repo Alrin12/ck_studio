@@ -60,9 +60,12 @@ export default class Banner extends Component {
     }
   }
 
-  renderAdvertise = item => {
+  renderContent = (item) => {
     return (
-      <div></div>
+      <p>
+        <Title>{item.title}</Title> <br/>
+        <Subtitle>{item.subtitle}</Subtitle>
+      </p>
     )
   }
 
@@ -85,7 +88,6 @@ export default class Banner extends Component {
 
     }
 
-
     return (
       <RowContainer>
         <Swiper {...params} containerClass={'swipe-container'}>
@@ -98,8 +100,9 @@ export default class Banner extends Component {
                   color={item.textColor}
                   style={{backgroundImage: `url(${item.image})`}}
                 >
-                  <Title>{item.title}</Title>
-                  <Subtitle>{item.subtitle}</Subtitle>
+                  {
+                    this.renderContent(item)
+                  }
                 </AdvertiseWrapper>
               )
             })
@@ -113,12 +116,14 @@ export default class Banner extends Component {
 
 
 const AdvertiseWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
   background: ${props => props.background} no-repeat;
   color: ${props => props.color};
-  align-items: center;
-  justify-content: center;
   background-size: cover;
-  height: 100%;
+  line-space
 `
 
 const Title = styled.p`
@@ -126,6 +131,7 @@ const Title = styled.p`
   font-size: 4rem;
   font-weight: 700;
   z-index: 2;
+  margin-bottom: -2rem;
 `
 
 const Subtitle = styled.p`
