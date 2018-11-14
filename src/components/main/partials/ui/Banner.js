@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Swiper from 'react-id-swiper'
+import './Banner.css'
 import styled from 'styled-components'
 
 
@@ -77,63 +78,45 @@ export default class Banner extends Component {
       },
 
       spaceBetween: 10,
+
     }
 
 
     return (
-      <div>
-        <Swiper {...params}>
+      <Container>
+        <Swiper {...params} containerClass={'swipe-container'}>
           {
             this.state.advertise.map((item, id) => {
               return (
-                <Container
+                <AdvertiseWrapper
                   key={id}
                   background={item.backgroundColor}
                   color={item.textColor}
+                  style={{backgroundImage: `url(${item.image})`}}
                 >
-                  {
-                    item.image &&
-                    <ImageContainer style={{backgroundImage: `url(${item.image})`}}>
-                      <Title>{item.content}</Title>
-                    </ImageContainer>
-                  }
-
-                  {
-                    !item.image &&
-                    <Title>{item.content}</Title>
-                  }
-                </Container>
+                  <Title>{item.content}</Title>
+                </AdvertiseWrapper>
               )
             })
           }
         </Swiper>
-      </div>
+      </Container>
     )
   }
 }
 
-const width = document.body.clientWidth
-const height = document.body.clientHeight
-const offset_height = height > 800 ? 400 : (height / 2) + 50;
 
 const Container = styled.div`
   display: flex;
-  position: relative;
-  background: ${props => props.background};
-  color: ${props => props.color};
-  width: ${width}px;
-  height: ${offset_height}px;
-  align-items: center;
-  justify-content: center
 `
 
-const ImageContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: ${offset_height}px;
-  background-size: cover;
+const AdvertiseWrapper = styled.div`
+  background: ${props => props.background} no-repeat;
+  color: ${props => props.color};
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  height: 100%;
 `
 
 const Title = styled.p`

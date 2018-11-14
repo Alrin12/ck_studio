@@ -1,8 +1,9 @@
 .App {
-  display: block;
+  display: flex;
   text-align: center;
   background: white;
   min-height: 100vh;
+  overflow: auto;
 }
 
 .App-logo {
