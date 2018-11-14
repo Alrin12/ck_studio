@@ -3,7 +3,7 @@
   text-align: center;
   background: white;
   min-height: 100vh;
-  flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .App-logo {

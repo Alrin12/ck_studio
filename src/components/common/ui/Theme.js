@@ -29,8 +29,9 @@ export class SlideDownContainer extends Component {
                 opacity: style.opacity,
                 display: 'flex',
                 flexDirection: 'column',
-                width:'100%',
+                width: '100%',
                 height: '100%',
+                flexWrap: 'wrap'
               }}
             >
               {this.props.children}
