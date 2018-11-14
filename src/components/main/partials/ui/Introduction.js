@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
 import {Motion, spring} from 'react-motion'
-import {Container} from "../../../common/ui/Theme";
+import {ColumnContainer} from "../../../common/ui/Theme";
 
 export default class Introduction extends Component {
   constructor(props) {
@@ -11,11 +11,11 @@ export default class Introduction extends Component {
 
   render() {
     return (
-      <Container>
+      <ColumnContainer>
         <p style={{color: '#ffffff'}}>
           testestesettstse
         </p>
-      </Container>
+      </ColumnContainer>
     )
   }
 }

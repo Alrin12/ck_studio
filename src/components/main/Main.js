@@ -3,7 +3,8 @@ import Banner from './partials/ui/Banner'
 import ProfileCard from '../common/ui/profile-card/ProfileCard'
 import Navigation from './partials/ui/Navigation'
 import Loading from '../common/ui/loading/Loading'
-import {Container} from "../common/ui/Theme"
+import {ColumnContainer} from "../common/ui/Theme"
+import Typographic from './partials/ui/Typographic'
 import styled from 'styled-components'
 
 export default class Main extends Component {
@@ -52,17 +53,22 @@ export default class Main extends Component {
           <Navigation
             nav_menu={this.state.nav_menu}
           />
-            <ProfileCard
-              cardClass={'float'}
-              name={'test'}
-              positionName={'Engineer'}
-              stats={[
-                {name: 'test1', value: 350},
-                {name: 'test1', value: 350},
-                {name: 'test1', value: 350},
-              ]}
-            />
-            <Banner/>
+          <Typographic
+            title={'.Big Idea'}
+            subtitle={'세상을 바꾸는 방법'}
+            subtitleColor={'skyblue'}
+          />
+          <ProfileCard
+            cardClass={'float'}
+            name={'test'}
+            positionName={'Engineer'}
+            stats={[
+              {name: 'test1', value: 350},
+              {name: 'test1', value: 350},
+              {name: 'test1', value: 350},
+            ]}
+          />
+          <Banner/>
           <div style={{height: '300px'}}/>
           <div style={{height: '300px'}}/>
           <div style={{height: '300px'}}/>
