@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Lottie from 'react-lottie'
-import Animation from 'react-lottie'
 // import * as animationData from '../../../../static/lottie/pinjump.json'
 
 const width = document.body.clientWidth
@@ -23,15 +22,22 @@ export default class Loading extends Component {
   render() {
     const containerStyle = {
       display: 'flex',
+      width: width,
+      height: '100vh',
       justifyContent: 'center',
       alignItems: 'center',
-      margin: '0, auto'
     }
+
+    const buttonStyle = {
+      display: 'block',
+      margin: '10px auto'
+    }
+
 
     const defaultOptions = {
       loop: true,
       autoplay: true,
-      animationData: require('../../../../static/lottie/servishero_loading.json'),
+      animationData: require("../../../../static/lottie/servishero_loading.json"),
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice'
       }
