@@ -6,6 +6,7 @@ import Loading from '../common/ui/loading/Loading'
 import {ColumnContainer} from "../common/ui/Theme"
 import Typographic from './partials/ui/Typographic'
 import Logo from './partials/ui/Logo'
+import {Drawer} from "../common/ui/effect/Effect";
 import styled from 'styled-components'
 
 export default class Main extends Component {
@@ -48,8 +49,9 @@ export default class Main extends Component {
   render() {
     const AnimationWrapper = this.props.wrapper
     return (
-      this.state.intervalId ? <Loading/> :
+      // this.state.intervalId ? <Loading/> :
         <AnimationWrapper>
+          <Drawer/>
           <Logo/>
           <Navigation
             nav_menu={this.state.nav_menu}
