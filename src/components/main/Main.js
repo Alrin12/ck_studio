@@ -6,7 +6,7 @@ import Loading from '../common/ui/loading/Loading'
 import {ColumnContainer} from "../common/ui/Theme"
 import Typographic from './partials/ui/Typographic'
 import Logo from './partials/ui/Logo'
-import {FountainEffects} from "../common/ui/effect/Effect";
+import FountainDots from '../common/ui/effect/FountainDots'
 import styled from 'styled-components'
 
 export default class Main extends Component {
@@ -56,6 +56,7 @@ export default class Main extends Component {
             nav_menu={this.state.nav_menu}
           />
           <Typographic
+            wrapper={FountainDots}
             title={'.Big Idea'}
             subtitle={'세상을 바꾸는 방법'}
             subtitleColor={'skyblue'}
