@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d5e4444-9cd6-42f6-8162-aa857b295bbc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/common/ui/effect/FountainDots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/common/ui/effect/Effect.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/ui/effect/Effect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +39,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
           <entry key="jpg" value="2" />
-          <entry key="js" value="84" />
+          <entry key="js" value="88" />
           <entry key="json" value="17" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
@@ -53,7 +55,7 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="3" />
           <entry key="JSON" value="17" />
-          <entry key="JavaScript" value="84" />
+          <entry key="JavaScript" value="88" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="7" />
@@ -70,10 +72,10 @@
         <counts>
           <entry key="css" value="174" />
           <entry key="html" value="116" />
-          <entry key="js" value="31133" />
+          <entry key="js" value="40746" />
           <entry key="json" value="3" />
           <entry key="scss" value="16" />
-          <entry key="txt" value="649" />
+          <entry key="txt" value="676" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -81,8 +83,8 @@
           <entry key="CSS" value="174" />
           <entry key="HTML" value="116" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="31133" />
-          <entry key="PLAIN_TEXT" value="649" />
+          <entry key="JavaScript" value="40746" />
+          <entry key="PLAIN_TEXT" value="676" />
           <entry key="SCSS" value="16" />
         </counts>
       </usages-collector>
@@ -142,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="45">
+              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -154,8 +156,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
+            <state relative-caret-position="155">
+              <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/Effect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="60" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -164,13 +178,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/Effect.js">
+        <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/FountainDots.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+            <state relative-caret-position="452">
+              <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+              <folding>
+                <element signature="e#1#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="81" column="42" lean-forward="true" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/Fountain.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -221,21 +256,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/\.css$</find>
-      <find>sass</find>
-      <find>test: /</find>
-      <find>in develo</find>
-      <find>postcss</find>
-      <find>localident</find>
-      <find>modules: true</find>
-      <find>styled-compon</find>
-      <find>elements</find>
-      <find>copyright</find>
-      <find>babel-plugin-transform</find>
-      <find>swiper</find>
-      <find>UserCard</find>
-      <find>babel</find>
-      <find>src</find>
       <find>scss</find>
       <find>test:</find>
       <find>.scss</find>
@@ -250,7 +270,22 @@
       <find>renderMain</find>
       <find>sth</find>
       <find>Partical</find>
+      <find>addVel</find>
+      <find>velocity</find>
+      <find>half</find>
+      <find>o</find>
+      <find>p</find>
+      <find>canvas</find>
+      <find>this.renderE</find>
+      <find>render</find>
+      <find>this.render</find>
+      <find>renderE</find>
+      <find>this.setSta</find>
+      <find>this.state.width</find>
+      <find>create</find>
       <find>reset</find>
+      <find>this.dot</find>
+      <find>255</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -290,16 +325,18 @@
         <option value="$PROJECT_DIR$/src/components/common/ui/loading/Loading.js" />
         <option value="$PROJECT_DIR$/src/components/common/ui/profile-card/ProfileCard.js" />
         <option value="$PROJECT_DIR$/src/components/main/partials/ui/Navigation.js" />
-        <option value="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" />
         <option value="$PROJECT_DIR$/src/components/common/ui/Theme.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/components/main/partials/ui/Logo.js" />
         <option value="$PROJECT_DIR$/src/components/main/partials/ui/Banner.css" />
         <option value="$PROJECT_DIR$/src/components/main/partials/ui/Banner.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/components/main/Main.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/common/ui/effect/Fountain.js" />
         <option value="$PROJECT_DIR$/src/components/common/ui/effect/Effect.js" />
+        <option value="$PROJECT_DIR$/src/components/main/Main.js" />
+        <option value="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" />
+        <option value="$PROJECT_DIR$/src/components/common/ui/effect/FountainDots.js" />
       </list>
     </option>
   </component>
@@ -568,11 +605,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542281575143</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fountain Effect init">
+      <created>1542540051360</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542540051360</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100708000" />
+    <option name="totallyTimeSpent" value="126244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="840" height="1027" extended-state="0" />
@@ -619,11 +663,10 @@
     <MESSAGE value="Main Component layout refector.&#10;Banner Component style refector." />
     <MESSAGE value="Typographic Component 생성." />
     <MESSAGE value="React Konva Library 설치.&#10;React 16.5.2 -&gt; 16.6.3 업데이트.&#10;React Dom 16.5.2 -&gt; 16.6.3 업데이트." />
-    <option name="LAST_COMMIT_MESSAGE" value="React Konva Library 설치.&#10;React 16.5.2 -&gt; 16.6.3 업데이트.&#10;React Dom 16.5.2 -&gt; 16.6.3 업데이트." />
+    <MESSAGE value="Fountain Effect init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fountain Effect init" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-id-swiper/lib/index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-ui-cards/bundle.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-ui-cards/index.js" />
     <entry file="file://$PROJECT_DIR$/config/webpack.config.dev.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -862,16 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Banner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -899,32 +932,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="51" column="45" selection-start-line="51" selection-start-column="45" selection-end-line="51" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="45">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/Fountain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/Effect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+        <state>
+          <caret selection-end-line="1" selection-end-column="60" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="57" column="18" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="81" column="42" lean-forward="true" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/ui/effect/FountainDots.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="8" />
+          <folding>
+            <element signature="e#1#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

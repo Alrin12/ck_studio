@@ -74,12 +74,15 @@ export default class Typographic extends Component {
 
   render() {
     const fontSize = this.getFontSize()
+    const Wrapper = this.props.wrapper
     return (
-      <RowContainer>
-        {
-          this.renderComponent(fontSize)
-        }
-      </RowContainer>
+      <Wrapper>
+        <RowContainer>
+          {
+            this.renderComponent(fontSize)
+          }
+        </RowContainer>
+      </Wrapper>
     )
   }
 }
