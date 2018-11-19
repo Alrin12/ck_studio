@@ -9,7 +9,7 @@ export default class FountainDots extends Component {
     super(props)
     this.state = {
       clientWidth: window.innerWidth,
-      clientHeight: window.innerHeight / 3,
+      clientHeight: window.innerHeight / 2.5,
       canvasCtx: null,
       me: {
         draw: null,
@@ -19,7 +19,7 @@ export default class FountainDots extends Component {
         '#E5D599',
         '#FFC219',
         '#F07C19',
-        '#E32551'
+        '#E32551',
       ],
       particles: [],
       particleAmount: 150,
@@ -30,29 +30,29 @@ export default class FountainDots extends Component {
 
   componentDidMount() {
     const self = this
-    const canvas = document.getElementsByClassName('fountain-dots');
+    const canvas = document.getElementsByClassName('fountain-dots')
     canvas.width = this.state.clientWidth
     canvas.height = this.state.clientHeight
     const me = {}
-    let halfOfWidth = canvas.width / 2;
-    let halfOfHeight = canvas.height / 2;
+    // let halfOfWidth = canvas.width / 2;
+    // let halfOfHeight = canvas.height / 2;
     const particles = []
 
-    const ctx = canvas[0].getContext('2d');
+    const ctx = canvas[0].getContext('2d')
 
     this.setState((state) => {
       return {canvasCtx: ctx}
     })
 
-    ctx.fillStyle = 'white';
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.translate(halfOfWidth, halfOfHeight);
+    ctx.fillStyle = "white"
+    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    // ctx.translate(halfOfWidth, halfOfHeight);
 
     for (let i = 0; i < this.state.particleAmount; i++) {
       const x = this.generateRandomVelocityX()
       const y = this.generateRandomVelocityY()
       const velocity = this.velocity(x, y)
-      const particle = this.dot(0, 0, velocity)
+      const particle = this.dot(-(canvas.width / 2), 0, velocity)
       particles.push(particle)
     }
 
@@ -64,24 +64,23 @@ export default class FountainDots extends Component {
 
     me.draw = function () {
       // const particles = self.state.particles
-      ctx.setTransform(1, 0, 0, 1, 0, 0);
-      ctx.fillStyle = 'rgba(255,255,255,1)';
-      ctx.fillRect(0, 0, self.state.clientWidth, self.state.clientHeight);
-      ctx.translate(halfOfWidth, self.state.clientHeight);
+      ctx.setTransform(1, 0, 0, 1, 0, 0)
+      ctx.fillStyle = 'rgba(255,255,255,1)'
+      ctx.fillRect(0, 0, self.state.clientWidth, self.state.clientHeight)
+      ctx.translate(self.state.clientWidth, self.state.clientHeight)
 
       for (let i = 0; i < particles.length; i++) {
-        const currentDot = particles[i];
-        ctx.beginPath();
-
-        ctx.arc(currentDot.x, currentDot.y, currentDot.size, 0, 9 * Math.PI, true);
-        ctx.fillStyle = currentDot.color;
-        ctx.fill();
-        currentDot.life--;
+        const currentDot = particles[i]
+        ctx.beginPath()
+        ctx.arc(currentDot.x, currentDot.y, currentDot.size, 0, 1 * Math.PI, true)
+        ctx.fillStyle = currentDot.color
+        ctx.fill()
+        currentDot.life--
 
         if (currentDot.life === 0) {
           self.reset(currentDot)
         }
-        currentDot.v.addVelocity(currentDot);
+        currentDot.v.addVelocity(currentDot)
       }
       window.requestAnimationFrame(me.draw)
     }
@@ -89,16 +88,16 @@ export default class FountainDots extends Component {
     window.requestAnimationFrame(me.draw)
 
     window.addEventListener("resize", () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
       self.setState((state) => {
         return {
           clientWidth: window.innerWidth,
-          clientHeight: window.innerHeight / 3
+          clientHeight: window.innerHeight / 2.5
         }
       })
-      halfOfWidth = canvas.width / 2;
-      halfOfHeight = canvas.height / 2;
+      // halfOfWidth = canvas.width / 2;
+      // halfOfHeight = canvas.height / 2;
     })
   }
 
@@ -135,7 +134,7 @@ export default class FountainDots extends Component {
     dot.color = this.generateColor()
     dot.life = Math.floor(Math.random() * 200) + 1
     dot.givenLife = dot.life
-    dot.size = Math.random() * 3 + 1
+    dot.size = Math.random() * 3 + 2
   }
 
   generateColor = () => {
@@ -146,26 +145,66 @@ export default class FountainDots extends Component {
   }
 
   generateRandomVelocityX = () => {
-    return Math.floor(Math.random() * 6) - 3;
+    return Math.floor(Math.random() * 6) - 3
   }
+
   generateRandomVelocityY = () => {
-    return Math.floor(Math.random() * this.state.shootPower) - this.state.shootPower;
+    return Math.floor(Math.random() * this.state.shootPower) - 12
   }
 
   render() {
     return (
-
-      <canvas
-        className={'fountain-dots'}
+      <Container
         width={this.state.clientWidth}
         height={this.state.clientHeight}
       >
-        <Layer>
-          <Text>
-            {this.props.children}
-          </Text>
-        </Layer>
-      </canvas>
+        <CanvasWrapper>
+          <Canvas
+            className={'fountain-dots'}
+            width={this.state.clientWidth}
+            height={this.state.clientHeight}
+          />
+        <PropWrapper>
+          {this.props.children}
+        </PropWrapper>
+        </CanvasWrapper>
+      </Container>
     )
   }
 }
+
+const Container = styled.div`
+  position: relative;
+  width: ${props => props.width}px;
+`
+
+const CanvasWrapper = styled.div`
+  display: flex;
+  position: relative;
+  justify-content: center;
+`
+const PropWrapper = styled.div`
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+`
+
+const Canvas = styled.canvas`
+  position: absolute;
+  width: 100%;
+`
