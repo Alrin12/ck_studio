@@ -49,10 +49,12 @@ export default class FountainDots extends Component {
     // ctx.translate(halfOfWidth, halfOfHeight);
 
     for (let i = 0; i < this.state.particleAmount; i++) {
-      const x = this.generateRandomVelocityX()
-      const y = this.generateRandomVelocityY()
-      const velocity = this.velocity(x, y)
-      const particle = this.dot(-(canvas.width / 2), 0, velocity)
+      const velocity_x = this.generateRandomVelocityX()
+      const velocity_y = this.generateRandomVelocityY()
+      const particle_x = -(this.state.clientWidth / 2) + Math.floor(Math.random() * 50)
+      const particle_y = Math.floor(Math.random() * 10) + 100
+      const velocity = this.velocity(velocity_x, velocity_y)
+      const particle = this.dot(particle_x, particle_y, velocity)
       particles.push(particle)
     }
 
@@ -72,7 +74,7 @@ export default class FountainDots extends Component {
       for (let i = 0; i < particles.length; i++) {
         const currentDot = particles[i]
         ctx.beginPath()
-        ctx.arc(currentDot.x, currentDot.y, currentDot.size, 0, 1 * Math.PI, true)
+        ctx.arc(currentDot.x, currentDot.y, currentDot.size, 10, 1 * Math.PI, true)
         ctx.fillStyle = currentDot.color
         ctx.fill()
         currentDot.life--
@@ -127,10 +129,10 @@ export default class FountainDots extends Component {
     const vx = this.generateRandomVelocityX()
     const vy = this.generateRandomVelocityY()
 
-    dot.v.x = vx
-    dot.v.y = vy
-    // dot.x = 0
-    // dot.y = 0
+    // dot.v.x = vx
+    // dot.v.y = vy
+    // dot.x = -(this.state.clientWidth / 2) + Math.floor(Math.random() * 50)
+    // dot.y = Math.floor(Math.random() * 10) + 100
     dot.color = this.generateColor()
     dot.life = Math.floor(Math.random() * 200) + 1
     dot.givenLife = dot.life
@@ -190,7 +192,8 @@ const PropWrapper = styled.div`
   animation-name: fadeIn;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 2s;
+  animation-duration: 1.2s;
+  background-color: rgba(255,255,255,0);
   
   @keyframes fadeIn {
     0% {

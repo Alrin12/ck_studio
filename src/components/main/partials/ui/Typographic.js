@@ -41,7 +41,9 @@ export default class Typographic extends Component {
   renderComponent = (fontSize) => {
     return (
       <ContentWrapper
-        style={{backgroundImage: this.state.background}}
+        style={{
+          backgroundImage: this.state.background,
+        }}
         color={this.state.backgroundColor}
       >
         <Title
@@ -76,8 +78,16 @@ export default class Typographic extends Component {
     const fontSize = this.getFontSize()
     const Wrapper = this.props.wrapper
     return (
-      <Wrapper>
-        <RowContainer>
+      <Wrapper
+        style={{
+          backgroundColor: `rgba(255,255,255,0)`
+        }}
+      >
+        <RowContainer
+          style={{
+            backgroundColor: `rgba(255,255,255,0)`
+          }}
+        >
           {
             this.renderComponent(fontSize)
           }
@@ -89,7 +99,7 @@ export default class Typographic extends Component {
 
 const ContentWrapper = styled.div`
   width: 100%;
-  background-color: ${props => props.color ? props.color : 'white'};
+  background-color: ${props => props.color ? props.color : 'rgba(255,255,255,0)'};
   background-size: cover;
 `
 
