@@ -7,7 +7,10 @@ import {ColumnContainer} from "../common/ui/Theme"
 import Typographic from './partials/ui/Typographic'
 import Logo from './partials/ui/Logo'
 import FountainDots from '../common/ui/effect/FountainDots'
+import ProjectProgress from './partials/ui/ProjectProgress'
+import ParallaxImage from './partials/ui/ParallaxImage'
 import styled from 'styled-components'
+import ProfileStats from "../common/ui/profile-card/ProfileStats";
 
 export default class Main extends Component {
   constructor(props) {
@@ -50,32 +53,65 @@ export default class Main extends Component {
     const AnimationWrapper = this.props.wrapper
     return (
       // this.state.intervalId ? <Loading/> :
-        <AnimationWrapper>
-          <Logo/>
-          <Navigation
-            nav_menu={this.state.nav_menu}
-          />
+      <AnimationWrapper>
+        <Logo/>
+        <Navigation
+          nav_menu={this.state.nav_menu}
+        />
+        <FountainDots>
           <Typographic
-            wrapper={FountainDots}
             title={'.Big Idea'}
             subtitle={'세상을 바꾸는 방법'}
             subtitleColor={'skyblue'}
           />
-          <ProfileCard
-            cardClass={'float'}
-            name={'test'}
-            positionName={'Engineer'}
-            stats={[
-              {name: 'test1', value: 350},
-              {name: 'test1', value: 350},
-              {name: 'test1', value: 350},
-            ]}
+        </FountainDots>
+        <br/>
+        <br/>
+        <ParallaxImage
+          image={'Work-culture.jpg'}
+          type={'dynamicBlur'}
+          min_blur={-10}
+          max_blur={30}
+        >
+          <Typographic
+            title={'결과로 보여드립니다.'}
+            subtitle={'-CK Studio'}
+            titleColor={'#2b2929'}
+            subtitleColor={'#ff4a75'}
           />
-          <Banner/>
-          <div style={{height: '300px'}}/>
-          <div style={{height: '300px'}}/>
-          <div style={{height: '300px'}}/>
-        </AnimationWrapper>
+        </ParallaxImage>
+        <br/>
+        <br/>
+        <ProjectProgress/>
+        <br/>
+        <br/>
+        <ProfileCard
+          cardClass={'float'}
+          name={'test'}
+          positionName={'Engineer'}
+          stats={[
+            {name: 'test1', value: 350},
+            {name: 'test1', value: 350},
+            {name: 'test1', value: 350},
+          ]}
+        />
+        <ParallaxImage
+          image={'work2.jpeg'}
+          strength={500}
+          type={'renderProp'}
+        >
+          <Typographic
+            title={'무엇이든 말씀하세요.'}
+            subtitle={'-Developer CK-'}
+            titleColor={'white'}
+            subtitleColor={'#c3873e'}
+          />
+        </ParallaxImage>
+        <Banner/>
+        <div style={{height: '300px'}}/>
+        <div style={{height: '300px'}}/>
+        <div style={{height: '300px'}}/>
+      </AnimationWrapper>
     )
   }
 }

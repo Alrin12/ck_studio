@@ -21,7 +21,7 @@ export default class Banner extends Component {
           backgroundColor: '#ffffff',
           image: require('../../../../static/images/adios.png')
         },
-        {id: 2, title: 'Test #2', subtitle: '', textColor: 'yellow', backgroundColor: 'skyblue', image: ''},
+        {id: 2, title: 'Test #2', subtitle: '', textColor: 'yellow', backgroundColor: 'skyblue', image: undefined},
         {
           id: 3,
           title: '여행을 가고싶을땐?',
@@ -30,7 +30,7 @@ export default class Banner extends Component {
           backgroundColor: 'white',
           image: require('../../../../static/images/travel.jpg')
         },
-        {id: 4, title: 'Test #4', subtitle: '', textColor: 'skyblue', backgroundColor: 'pink', image: ''},
+        {id: 4, title: 'Test #4', subtitle: '', textColor: 'skyblue', backgroundColor: 'pink', image: undefined},
         {
           id: 5,
           title: 'Test #5',
@@ -60,12 +60,19 @@ export default class Banner extends Component {
     }
   }
 
-  renderContent = (item) => {
+  renderContent = (item, id) => {
     return (
-      <p>
-        <Title>{item.title}</Title> <br/>
-        <Subtitle>{item.subtitle}</Subtitle>
-      </p>
+      <AdvertiseWrapper
+        key={id}
+        background={item.backgroundColor}
+        color={item.textColor}
+        style={{backgroundImage: `url(${item.image ? item.image : ''})`}}
+      >
+        <p>
+          <Title>{item.title}</Title> <br/>
+          <Subtitle>{item.subtitle}</Subtitle>
+        </p>
+      </AdvertiseWrapper>
     )
   }
 
@@ -81,29 +88,21 @@ export default class Banner extends Component {
 
       },
       autoplay: {
-        delay: 3000
+        delay: 2000
       },
+
+
 
       spaceBetween: 10,
 
     }
-
     return (
       <RowContainer>
         <Swiper {...params} containerClass={'swipe-container'}>
           {
             this.state.advertise.map((item, id) => {
               return (
-                <AdvertiseWrapper
-                  key={id}
-                  background={item.backgroundColor}
-                  color={item.textColor}
-                  style={{backgroundImage: `url(${item.image})`}}
-                >
-                  {
-                    this.renderContent(item)
-                  }
-                </AdvertiseWrapper>
+                this.renderContent(item, id)
               )
             })
           }
@@ -119,11 +118,9 @@ const AdvertiseWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: no-wrap;
   background: ${props => props.background} no-repeat;
   color: ${props => props.color};
   background-size: cover;
-  line-space
 `
 
 const Title = styled.p`
