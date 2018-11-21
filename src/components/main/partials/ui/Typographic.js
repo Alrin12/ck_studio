@@ -28,7 +28,7 @@ export default class Typographic extends Component {
     }
 
     if (subtitle) {
-      return {title: '7rem', subtitle: '3rem', article: '0rem'}
+      return {title: '5rem', subtitle: '3rem', article: '0rem'}
     }
 
     if (article) {
@@ -76,13 +76,8 @@ export default class Typographic extends Component {
 
   render() {
     const fontSize = this.getFontSize()
-    const Wrapper = this.props.wrapper
+    // const Wrapper = this.props.wrapper
     return (
-      <Wrapper
-        style={{
-          backgroundColor: `rgba(255,255,255,0)`
-        }}
-      >
         <RowContainer
           style={{
             backgroundColor: `rgba(255,255,255,0)`
@@ -92,7 +87,6 @@ export default class Typographic extends Component {
             this.renderComponent(fontSize)
           }
         </RowContainer>
-      </Wrapper>
     )
   }
 }

@@ -1,7 +1,4 @@
 import React, {Component} from 'react'
-import Konva from 'konva'
-import {Stage, Layer, Text} from 'react-konva'
-import {Motion, StaggeredMotion, spring} from 'react-motion'
 import styled from 'styled-components'
 
 export default class FountainDots extends Component {
@@ -126,8 +123,8 @@ export default class FountainDots extends Component {
   }
 
   reset = (dot) => {
-    const vx = this.generateRandomVelocityX()
-    const vy = this.generateRandomVelocityY()
+    // const vx = this.generateRandomVelocityX()
+    // const vy = this.generateRandomVelocityY()
 
     // dot.v.x = vx
     // dot.v.y = vy
@@ -209,5 +206,6 @@ const PropWrapper = styled.div`
 
 const Canvas = styled.canvas`
   position: absolute;
+  height: 100%;
   width: 100%;
 `
