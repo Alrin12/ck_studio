@@ -9,8 +9,12 @@ import Logo from './partials/ui/Logo'
 import FountainDots from '../common/ui/effect/FountainDots'
 import ProjectProgress from './partials/ui/ProjectProgress'
 import ParallaxImage from './partials/ui/ParallaxImage'
+import ScrollAnim from 'rc-scroll-anim'
 import styled from 'styled-components'
 import ProfileStats from "../common/ui/profile-card/ProfileStats";
+
+const ScrollParallax = ScrollAnim.Parallax
+const ScrollElement = ScrollAnim.Element
 
 export default class Main extends Component {
   constructor(props) {
@@ -31,9 +35,14 @@ export default class Main extends Component {
 
   componentDidMount() {
     const intervalId = setInterval(this.updateAnimationTimer, 1000)
+    window.addEventListener('scroll', this.handleScroll)
     this.setState((state) => {
       return {intervalId: intervalId}
     })
+  }
+
+  handleScroll = (event) => {
+
   }
 
   updateAnimationTimer = () => {
@@ -67,6 +76,7 @@ export default class Main extends Component {
         </FountainDots>
         <br/>
         <br/>
+        <br/>
         <ParallaxImage
           image={'Work-culture.jpg'}
           type={'dynamicBlur'}
@@ -82,7 +92,36 @@ export default class Main extends Component {
         </ParallaxImage>
         <br/>
         <br/>
-        <ProjectProgress/>
+        <br/>
+        <br/>
+        <br/>
+        <ScrollParallax
+          animation={{blur: '0px', playScale: [0, 0.5], opacity: 1}}
+          style={{filter: 'blur(20px)', opacity: 0, color: '#ffffff'}}
+          className={'parallax-shape'}
+        >
+          <ProjectProgress/>
+        </ScrollParallax>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <ScrollParallax
+          animation={{x: 0, backgroundColor: '#00ffc6', playScale: [0.3, 0.8], opacity: 1}}
+          style={{transform:'translateX(-300px)', opacity:0, filter: 'blur(0px)'}}
+        >
+          <Typographic
+            title={`About CK-Studio`}
+            titleColor={'cornsilk'}
+            article={`
+          '불가능 한 일은 없다'는 모토로 세상에 만연해 있는 불편함들을 해결하는 '해결사'입니다.br
+          _yellow 문제 해결_을 위한 _deepskyblue 근본적인 문제 인식_과 설계, 끊임없는 연구를 통해 어떠한 솔루션보다br
+          완벽한 결과물을 선사해드립니다.
+          `}
+            articleColor={'white'}
+          />
+        </ScrollParallax>
         <br/>
         <br/>
         <ProfileCard
@@ -100,13 +139,25 @@ export default class Main extends Component {
           strength={500}
           type={'renderProp'}
         >
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <Typographic
             title={'무엇이든 말씀하세요.'}
             subtitle={'-Developer CK-'}
             titleColor={'white'}
             subtitleColor={'#c3873e'}
           />
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </ParallaxImage>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <Banner/>
         <div style={{height: '300px'}}/>
         <div style={{height: '300px'}}/>
