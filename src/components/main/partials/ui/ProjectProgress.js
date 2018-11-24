@@ -31,10 +31,10 @@ export default class ProjectProgress extends Component {
       >
         {
           this.state.data.map((item, id) => {
-
             return (
               <Progress
                 key={id}
+                status={'active'}
                 type={'circle'}
                 percent={item.progress}
                 status={'active'}
