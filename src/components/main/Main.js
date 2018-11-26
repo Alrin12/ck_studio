@@ -94,7 +94,6 @@ export default class Main extends Component {
         <br/>
         <br/>
         <br/>
-        <br/>
         <ScrollParallax
           animation={{blur: '0px', playScale: [0, 0.5], opacity: 1}}
           style={{filter: 'blur(20px)', opacity: 0, color: '#ffffff'}}
