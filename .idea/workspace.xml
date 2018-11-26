@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1d5e4444-9cd6-42f6-8162-aa857b295bbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/partials/ui/ProjectProgress.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/partials/ui/ProjectProgress.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,14 +18,15 @@
     <session id="-1256012547">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,7 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="7" />
+          <entry key="ESLintLanguageService" value="8" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
@@ -75,10 +71,10 @@
         <counts>
           <entry key="css" value="268" />
           <entry key="html" value="116" />
-          <entry key="js" value="53934" />
+          <entry key="js" value="53935" />
           <entry key="json" value="3" />
           <entry key="scss" value="16" />
-          <entry key="txt" value="849" />
+          <entry key="txt" value="946" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -86,8 +82,8 @@
           <entry key="CSS" value="268" />
           <entry key="HTML" value="116" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="53933" />
-          <entry key="PLAIN_TEXT" value="849" />
+          <entry key="JavaScript" value="53934" />
+          <entry key="PLAIN_TEXT" value="946" />
           <entry key="RegExp" value="1" />
           <entry key="SCSS" value="16" />
         </counts>
@@ -148,8 +144,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+            <state relative-caret-position="570">
+              <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -172,7 +168,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/ParallaxImage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="375">
               <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -184,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="465">
               <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -196,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Navigation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
+            <state relative-caret-position="30">
               <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -464,7 +460,8 @@
       <workItem from="1541681349600" duration="7142000" />
       <workItem from="1541754670355" duration="9062000" />
       <workItem from="1542232091953" duration="810000" />
-      <workItem from="1543074335593" duration="6119000" />
+      <workItem from="1543074335593" duration="6867000" />
+      <workItem from="1543243452490" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1540026731428</created>
@@ -592,11 +589,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542797115148</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="&lt;Typographic&gt; Logic 수정(특정 string color 설정 가능)&#10;&lt;Main&gt; Layout 수정&#10;&lt;ScrollParallax&gt; 적용">
+      <created>1543081507782</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1543081507783</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168046000" />
+    <option name="totallyTimeSpent" value="169303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1147" height="1417" extended-state="0" />
@@ -616,8 +620,8 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32861635" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50758255" side_tool="true" visible="true" weight="0.18147014" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49241748" visible="true" weight="0.18147014" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5084746" side_tool="true" visible="true" weight="0.18147014" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4915254" visible="true" weight="0.18147014" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32969433" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -648,7 +652,8 @@
     <MESSAGE value="Particle Effect done." />
     <MESSAGE value="Particle Effect Refector (파티클 랜덤생성으로 변경)" />
     <MESSAGE value="&lt;Parallax&gt; Init, &lt;Main&gt; Layout Fix." />
-    <option name="LAST_COMMIT_MESSAGE" value="&lt;Parallax&gt; Init, &lt;Main&gt; Layout Fix." />
+    <MESSAGE value="&lt;Typographic&gt; Logic 수정(특정 string color 설정 가능)&#10;&lt;Main&gt; Layout 수정&#10;&lt;ScrollParallax&gt; 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="&lt;Typographic&gt; Logic 수정(특정 string color 설정 가능)&#10;&lt;Main&gt; Layout 수정&#10;&lt;ScrollParallax&gt; 적용" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/common/ui/profile-card/ProfileHeader.js">
@@ -821,9 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -838,9 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="69" column="7" lean-forward="true" selection-start-line="69" selection-start-column="7" selection-end-line="69" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,6 +898,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/ui/Theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/CircleLoader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="92" column="13" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/ProjectProgress.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -909,39 +932,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/ui/Theme.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/CircleLoader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/ParallaxImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="375">
           <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -951,7 +944,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Typographic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="465">
           <caret line="33" column="67" lean-forward="true" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="67" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -959,10 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/main/Main.js">
+    <entry file="file://$PROJECT_DIR$/src/components/main/partials/ui/Navigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="64" column="24" lean-forward="true" selection-start-line="64" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
