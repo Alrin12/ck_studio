@@ -47,6 +47,7 @@
     "react-dev-utils": "^6.0.5",
     "react-dom": "^16.6.3",
     "react-id-swiper": "^1.6.8",
+    "react-intersection-observer": "^6.2.3",
     "react-konva": "^16.6.31",
     "react-lottie": "^1.2.3",
     "react-motion": "^0.5.2",
