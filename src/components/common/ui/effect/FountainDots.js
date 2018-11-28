@@ -21,7 +21,8 @@ export default class FountainDots extends Component {
       particles: [],
       particleAmount: 150,
       gravity: 0.5,
-      shootPower: 10
+      shootPower: 10,
+      inView: this.props.inView
     }
   }
 
